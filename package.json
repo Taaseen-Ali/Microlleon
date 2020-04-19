@@ -1,0 +1,24 @@
+{
+  "name": "microlleon",
+  "version": "1.0.0",
+  "description": "Simple wallet app for Tezos",
+  "main": "src/main.js",
+  "dependencies": {
+    "conseiljs": "^0.4.1",
+    "electron": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taaseen-Ali/Microlleon.git"
+  },
+  "author": "Taaseen Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taaseen-Ali/Microlleon/issues"
+  },
+  "homepage": "https://github.com/Taaseen-Ali/Microlleon#readme"
+}
