@@ -1,0 +1,26 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "lib": [ "es2015" ],
+	"baseUrl": "./",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "target": "es5"
+    },
+    "exclude": [
+        "typings"
+    ],
+    "include": [
+        "./src/**/*.ts",
+        "node_modules/**/*.d.ts",
+        "scripts/typings/d.ts"
+    ],
+    "files": [
+        "./index.ts",
+    ]
+}
