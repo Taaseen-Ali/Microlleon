@@ -4,12 +4,19 @@
   "description": "Simple wallet app for Tezos",
   "main": "src/main.js",
   "dependencies": {
+    "@airgap/beacon-sdk": "^1.1.0",
     "conseiljs": "^0.4.1",
     "electron": "^8.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
