@@ -1,13 +1,14 @@
 # Microlleon
-Basic tezos desktop wallet
+Skeleton tezos desktop wallet for testing
 
 ## Installation:
 ```
 git clone https://github.com/Taaseen-Ali/Microlleon.git
 cd Microlleon
 npm install
+npm run build
 ```
 ### Run:
 ```
-npm start
+npm run start
 ```
