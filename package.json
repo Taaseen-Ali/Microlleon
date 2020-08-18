@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple wallet app for Tezos",
   "main": "src/main.js",
+  "target": "web",
   "dependencies": {
     "@airgap/beacon-sdk": "^1.1.0",
     "conseiljs": "^0.4.1",
@@ -27,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/Taaseen-Ali/Microlleon/issues"
   },
-  "homepage": "https://github.com/Taaseen-Ali/Microlleon#readme"
+  "homepage": "https://github.com/Taaseen-Ali/Microlleon#readme",
+  "node": {
+    "fs": "empty"
+  }
 }
