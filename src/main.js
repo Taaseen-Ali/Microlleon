@@ -6,39 +6,39 @@ const url = require('url');
 let win;
 
 function createWindow() {
-  // Create browser window
+    // Create browser window
     win = new BrowserWindow({ width: 800, height: 600, webPreferences: {nodeIntegration: true}});
 
-  win.loadURL(
-    url.format({
-      pathname: path.join(__dirname, './index.html'),
-      protocol: 'file',
-      slashes: true,
-    })
-  );
+    win.loadURL(
+	url.format({
+	    pathname: path.join(__dirname, './index.html'),
+	    protocol: 'file',
+	    slashes: true,
+	})
+    );
 
-  //Open devtools
-  win.webContents.openDevTools();
-  win.on('closed', () => {
-    win = null;
-  });
+    //Open devtools
+    win.webContents.openDevTools();
+    win.on('closed', () => {
+	win = null;
+    });
 }
 
 app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
+    if (process.platform !== 'darwin') {
+	app.quit();
+    }
 });
 
 var link;
 
-// This will catch clicks on links such as <a href="foobar://abc=1">open in foobar</a>
 app.on('open-url', function (event, data) {
-  event.preventDefault();
-  link = data;
+    event.preventDefault();
+    link = data;
 });
+
 
 app.setAsDefaultProtocolClient('microlleon');
 

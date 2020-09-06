@@ -1,47 +1,48 @@
 {
-    "name": "microlleon",
-    "version": "1.0.0",
-    "description": "Simple wallet app for Tezos",
-    "main": "src/main.js",
-    "dependencies": {
-	"@airgap/beacon-sdk": "^1.1.0",
-	"conseiljs": "^0.4.3",
-	"conseiljs-softsigner": "^5.0.3"
-    },
-    "devDependencies": {
-	"electron": "^8.2.0",
-	"electron-builder": "^22.8.0",
-	"ts-loader": "^8.0.2",
-	"typescript": "^3.9.7",
-	"webpack": "^4.44.1",
-	"webpack-cli": "^3.3.12"
-    },
-    "scripts": {
-	"start": "electron .",
-	"build": "webpack",
-	"dist": "electron-builder"
-    },
-    "build": {
-	"appId": "taaseen-ali.microlleon",
-	"mac": {
-	    "category": "public.app-category.Reference"
-	},
-	"win": {},
-	"protocols": {
-	    "name": "microlleon-deep-linking",
-	    "schemes": [
-		"microlleon"
-	    ]
-	}
-    },
-    "repository": {
-	"type": "git",
-	"url": "git+https://github.com/Taaseen-Ali/Microlleon.git"
-    },
-    "author": "Taaseen Ali",
-    "license": "ISC",
-    "bugs": {
-	"url": "https://github.com/Taaseen-Ali/Microlleon/issues"
-    },
-    "homepage": "https://github.com/Taaseen-Ali/Microlleon#readme"
+			"name": "microlleon",
+			"version": "1.0.0",
+			"description": "Simple wallet app for Tezos",
+			"main": "src/main.js",
+			"dependencies": {
+						"@airgap/beacon-sdk": "^1.1.0",
+						"conseiljs": "^0.4.3",
+						"conseiljs-softsigner": "^5.0.3",
+						"electron-store": "^6.0.0"
+			},
+			"devDependencies": {
+						"electron": "^8.2.0",
+						"electron-builder": "^22.8.0",
+						"ts-loader": "^8.0.2",
+						"typescript": "^3.9.7",
+						"webpack": "^4.44.1",
+						"webpack-cli": "^3.3.12"
+			},
+			"scripts": {
+						"start": "electron .",
+						"build": "webpack",
+						"dist": "electron-builder"
+			},
+			"build": {
+						"appId": "taaseen-ali.microlleon",
+						"mac": {
+									"category": "public.app-category.Reference"
+						},
+						"win": {},
+						"protocols": {
+									"name": "microlleon-deep-linking",
+									"schemes": [
+												"microlleon"
+									]
+						}
+			},
+			"repository": {
+						"type": "git",
+						"url": "git+https://github.com/Taaseen-Ali/Microlleon.git"
+			},
+			"author": "Taaseen Ali",
+			"license": "ISC",
+			"bugs": {
+						"url": "https://github.com/Taaseen-Ali/Microlleon/issues"
+			},
+			"homepage": "https://github.com/Taaseen-Ali/Microlleon#readme"
 }
